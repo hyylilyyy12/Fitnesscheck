@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FitCheck | Fitness Analyzer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1><span class="material-icons">fitness_center</span> FitCheck</h1>
+    <p class="subtitle">Smart Fitness & Health Analyzer</p>
+
+    <div class="card">
+        <div class="input-group">
+            <label>Height (cm)</label>
+            <input type="number" id="height" placeholder="e.g. 170">
+        </div>
+
+        <div class="input-group">
+            <label>Weight (kg)</label>
+            <input type="number" id="weight" placeholder="e.g. 65">
+        </div>
+
+        <div class="input-group">
+            <label>Age</label>
+            <input type="number" id="age" placeholder="e.g. 21">
+        </div>
+
+        <div class="input-group">
+            <label>Activity Level</label>
+            <select id="activity">
+                <option value="1.2">Sedentary</option>
+                <option value="1.375">Light Active</option>
+                <option value="1.55">Moderate</option>
+                <option value="1.725">Very Active</option>
+            </select>
+        </div>
+
+        <button onclick="calculate()">Check Fitness</button>
+    </div>
+
+    <div id="result" class="result hidden"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
